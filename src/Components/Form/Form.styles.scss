@@ -1,0 +1,21 @@
+.form {
+    margin-top: 0.625rem;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+    &__data {
+        display:flex;
+        flex-direction:column;
+        margin-bottom: 0.625rem;
+        width: 80%
+
+        &__box {
+            border-radius:0.3125rem;
+            margin-top: 0.625rem;
+            border-color: rgb(150, 184, 217);
+            border-style: solid;
+            
+        }
+    }
+}

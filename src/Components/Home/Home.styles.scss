@@ -1,0 +1,13 @@
+.home {
+    border-radius: 0.6rem;
+    border-color: blueviolet;
+    border-style: hidden;
+    padding-bottom:0.5rem;
+    background-color: rgb(232, 232, 237);
+    color: rgb(42, 42, 42);
+
+    &__list {
+        font-weight: 625;
+        color:black;
+    }
+}

@@ -2,20 +2,20 @@ import '/ListNews.styles.scss'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { axios } from 'axios'
-import Apikey from '../ApiKey/ApiKey'
+import Apikey from '../'
 
 const ListNews = () => {
     const [ articles, setArticles ] = useState([])
 
     const getArticles = async () => {
         try {
-            const response = await axios.get(`https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=${ApiKey.key}`)
+            const response = await axios.get(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=ETjeMwR6efCFlBnK7LiGKKnOUkwcPV2g`)
             setArticles(response.data.results)
         } catch (error) {
             console.error (error)
         }
     }
-
+// https://api.nytimes.com/svc/books/v3/reviews.json?author=Stephen+King&api-key=yourkey
     useEffect(() => {
         getArticles()
     }, [])
@@ -35,3 +35,4 @@ const ListNews = () => {
 }
 
 export default ListNews
+

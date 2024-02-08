@@ -27,7 +27,7 @@ const Form = () => {
 
     return(
         <>
-        <form className='form' onSubmit={handleSubmit}>
+        <form className='form' onSubmit={ handleSubmit }>
             <div className='form__data'>
                 <input className='form__data__box' placeholder='title' type='text' name='name' value={ data.name } onChange={ handleInputChange }></input>
                 <textarea className='form__data__box' name="info" placeholder="text" cols="30" rows="10" value={ data.info } onChange={ handleInputChange }></textarea>

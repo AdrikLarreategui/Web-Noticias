@@ -1,4 +1,3 @@
-import '/ListNews.styles.scss'
 import { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 //import { axios } from 'axios'

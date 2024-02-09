@@ -1,4 +1,4 @@
-import { BrowserRoute, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Header from './Components/Header/Header'
 import Form from './Components/Form/Form'
@@ -10,7 +10,7 @@ import './App.css'
 function App() {
   return(
     <GlobalProvider>
-    <BrowserRoute>
+    <BrowserRouter>
     <Header />
       <Routes>
         <Route path='/' element={ <Home/> }/>
@@ -18,7 +18,7 @@ function App() {
         <Route path='/list' element= { <ListNews/> }/>
       </Routes>
       <Footer />
-    </BrowserRoute>
+    </BrowserRouter>
     </GlobalProvider>
   )
 }

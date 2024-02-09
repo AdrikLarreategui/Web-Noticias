@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './Header.styless.scss'
+import './Header.styles.scss'
 
 const Header = () => {
     return (
@@ -7,7 +7,7 @@ const Header = () => {
             <>
             <span><Link className='header-link' to='/'>Home</Link></span>
             <span><Link className='header-link' to='/form'>Subir noticias</Link></span>
-            <span><Link className='header-link' to='/list'>Sección de noticias</Link></span>
+            <span><Link className='header-link' to='/list'>Géneros</Link></span>
             </>
         </nav>
     )

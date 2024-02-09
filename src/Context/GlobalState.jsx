@@ -1,7 +1,7 @@
-import { axios } from 'axios'
+import axios from 'axios';
 import AppReducer from '../Context/AppReducer'
 import { createContext, useReducer } from 'react'
-import ApiKey from '../ApiKey/Apikey'
+import Apikey from '../ApiKey/Apikey'
 
 const initialState = {
     articles: []
@@ -30,3 +30,4 @@ export const GlobalProvider = ({ children }) => {
 }
 
 export const GlobalContext = createContext(initialState)
+

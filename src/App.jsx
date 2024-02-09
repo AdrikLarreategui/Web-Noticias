@@ -4,10 +4,12 @@ import Header from './Components/Header/Header'
 import Form from './Components/Form/Form'
 import ListNews from './Components/ListNews/ListNews'
 import Footer from './Components/Footer/Footer'
+import {GlobalProvider} from './Context/GlobalState'
 import './App.css'
 
 function App() {
   return(
+    <GlobalProvider>
     <BrowserRoute>
     <Header />
       <Routes>
@@ -17,6 +19,7 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRoute>
+    </GlobalProvider>
   )
 }
 

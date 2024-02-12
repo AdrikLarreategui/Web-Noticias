@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './Article.styless.scss'
+import './Article.styles.scss'
 
 export  const Article = (props) => {
     return (

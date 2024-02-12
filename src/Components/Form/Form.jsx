@@ -1,7 +1,6 @@
 import './Form.styles.scss'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Swal from 'sweetalert2'
 
 const Form = () => {
     const [ data, setData ] = useState ({
@@ -41,15 +40,15 @@ const Form = () => {
         }
       }
 
-      const Alert = () => {
-        if(data.name.length < 1 || !data.info || !data.url) {
-            Swal.fire({
-                title: 'Error!',
-                text: 'Rellena todos los campos!',
-                confirmationButtonText: 'Aceptar'
-            })
-        }
-      }
+    //   const Alert = () => {
+    //     if(data.name.length < 1 || !data.info || !data.url) {
+    //         Swal.fire({
+    //             title: 'Error!',
+    //             text: 'Rellena todos los campos!',
+    //             confirmationButtonText: 'Aceptar'
+    //         })
+    //     }
+    //   }
     
     return(
         <>

@@ -16,9 +16,8 @@
             margin-top: 0.625rem;
             border-color: rgb(150, 184, 217);
             border-style: solid;
-            background-color: adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
-            color:adjust-color($color: #000000, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
-
+            background-color: rgb(74, 90, 106);
+            color:rgb(114, 140, 167)
         }
         ::placeholder {
             color:hsl(from color h s l);

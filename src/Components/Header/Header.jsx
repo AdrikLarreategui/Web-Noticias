@@ -3,7 +3,7 @@ import './Header.styles.scss'
 
 const Header = () => {
     return (
-        <nav>
+        <nav className='header'>
             <>
             <span><Link className='header-link' to='/'>Home</Link></span>
             <span><Link className='header-link' to='/form'>Subir noticias</Link></span>

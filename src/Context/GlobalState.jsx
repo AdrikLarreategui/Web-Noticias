@@ -11,7 +11,7 @@ export const GlobalProvider = ({ children }) => {
     const [state, dispatch ] = useReducer(AppReducer, initialState)
 
     const getArticles = async () => {
-        const response = await axios.get(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${Apikey.key}`)
+        const response = await axios.get(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=ETjeMwR6efCFlBnK7LiGKKnOUkwcPV2g`)
             dispatch({
                 type: 'GET_ARTICLES',
                 payload: response.data.results
